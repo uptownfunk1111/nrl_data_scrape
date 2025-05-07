@@ -1,12 +1,14 @@
 import json
 import pandas as pd
 import numpy as np
+import sys
+import os
+
+# Ensure ENVIRONMENT_VARIABLES is imported from the correct location
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+import ENVIRONMENT_VARIABLES as EV
 from utilities.get_detailed_match_data import get_detailed_nrl_data
 from utilities.set_up_driver import set_up_driver
-import sys
-
-sys.path.append("..")
-import ENVIRONMENT_VARIABLES as EV
 
 # Define key variables
 # SELECTION_TYPE = 'HOSTPLUS'
